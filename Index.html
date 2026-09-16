@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌻 Mi galaxia</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background:
+    radial-gradient(circle at 50% 50%, #3b176d, #09001c 60%, #000 100%);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Estrellas */
+.estrella {
+  position: absolute;
+  color: white;
+  animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo {
+  from { opacity: 0.2; }
+  to { opacity: 1; }
+}
+
+/* Galaxia */
+.galaxia {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    ellipse,
+    #ffd6ff 0%,
+    #a855f7 15%,
+    #4c1d95 35%,
+    transparent 70%
+  );
+  box-shadow: 0 
